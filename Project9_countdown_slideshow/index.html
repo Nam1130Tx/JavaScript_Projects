@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Countdown</title>
+        <script src="JS/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    </head>
+
+    <body>
+        <!-- Countdown Assignment -->
+        <section>
+            <div class="countdown">
+                <p>How many seconds would you like  to set your timer for?</p>
+                <input id="seconds" value=""/>
+                <button onclick="countdown()">Click here</button>
+                <p id="timer"></p>
+            </div>
+        </section>
+        <!-- End Countdown -->
+        <br><br>
+        <!-- Slideshow Challange/Assignment -->
+        <section>
+            <!-- Slideshow Container-->
+            <div class="slideshow-container">
+                <!-- Images -->
+                <div class="slide fade">
+                    <div class="numtext">1 / 5</div>
+                    <img src="Images/thumb1.jpg" style="width:100%;" alt="Giraffe">
+                    <div class="text">A hungry giraffe</div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="numtext">2 / 5</div>
+                    <img src="Images/thumb2.jpg" style="width:100%;" alt="Lion">
+                    <div class="text">A lion resting</div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="numtext">3 / 5</div>
+                    <img src="Images/thumb3.jpg" style="width:100%;" alt="Racoon">
+                    <div class="text">A curious racoon</div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="numtext">4 / 5</div>
+                    <img src="Images/thumb4.jpg" style="width:100%;" alt="Sea Turtle">
+                    <div class="text">This sea turtle is out for a swim</div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="numtext">5 / 5</div>
+                    <img src="Images/thumb5.jpg" style="width:100%;" alt="Wolf">
+                    <div class="text">Howling wolf, looking for his pack</div>
+                </div>
+
+                <!-- Direction Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- Dots/Circles -->
+            <div style="text-align:center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+    
+    </body>
+</html>
