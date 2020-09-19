@@ -54,13 +54,13 @@ function checkWinConditions() {                                                 
     else if (arrayIncludes('0O', '4O', '8O')) { drawWinLine(100, 100, 520, 520); }
     else if (selectedSquares.length >= 9) {
         audio('./media/tiedgame.mp3');                                               //plays the tied game sfx if all markers are placed, and no win is found.
-        setTimeout(function () { resetGame();} , 1000);
+        setTimeout(function () { resetGame(); } , 1000);
     }
     function arrayIncludes(squareA, squareB, squareC) {
         const a = selectedSquares.includes(squareA);
         const b = selectedSquares.includes(squareB);
         const c = selectedSquares.includes(squareC);
-        if (a === true && b=== true && c === true) {return true;}
+        if (a === true && b === true && c === true) { return true; }
     }
 }
 
@@ -75,7 +75,8 @@ function audio(audioURL) {
 }
 
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {                          //This function puts the line start and end point in the canvas element.
-    const c = canvas.getContext('2d') ;
+    const canvas = document.getElementById('win-lines');
+    const c = canvas.getContext('2d');
     let x1 = coordX1,
         y1 = coordY1,
         x2 = coordX2,
@@ -94,7 +95,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {                      
         c.stroke();
         if (x1 <= x2 && y1 <= y2) {
             if (x < x2) { x += 10; }
-            if (y < y2) { y -= 10; }
+            if (y < y2) { y += 10; }
             if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
         }
         if (x1 <= x2 && y1 >= y2) {
