@@ -1,0 +1,95 @@
+body {
+    background-color: #cccccc;
+}
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: gray;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: darkslategray;
+    font-weight: bolder;
+}
+
+
+#menuBG {
+    width: 650px;
+    height: 700px;
+    margin: 10px auto;
+    border: 2px solid cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cornsilk;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+    border: 5px solid dimgray;
+    background-color: #ff6347;
+    margin: 25px auto;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: steelblue;
+}
+
+.left {
+    width: 200px;
+    height: 225px;
+    margin-left: auto;
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: honeydew;
+}
+
+.center {
+    width: 200px;
+    height: 225px;
+    margin: auto;
+    float: left;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: honeydew;
+}
+
+.right {
+    width: 200px;
+    height: 225px;
+    margin-right: auto;
+    float: right;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: ghostwhite;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: steelblue;
+}
+
+#cart {
+    top: 0;margin: 0px auto;
+    width: 400px;
+    height: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    color: lightslategray;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 25px auto;
+}
