@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<script>
+$(document).ready(function() { //Changes the html document to add a body with a heading and three p elements
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1> Hi, I'm Steve</h1>\
+                    <p id='1'>Click to hide me.</p>\
+                    <p id='2'>Hover to bring me back.</p>\
+                    <p id='3'>Bye again...</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    $("#2").css({"color":"goldenrod"}); //target the second paragraph and applied css color property using jQuery.
+    $("#1").click(function () {         //Fades out the first element on clicking.
+        $('h1').fadeOut();
+    });
+    $("#2").mouseover(function () {     //When the mouse hovers over the element, the heading is shown again.
+        $('h1').fadeIn();
+    });
+    $("#3").on({                        // Here used .on to use multiple triggers and effects.
+        "click": function() {
+            $('h1').hide("fast");
+        },
+        "mouseover": function() {
+            $('h1').css({"border":"2px solid navy"});
+        }
+    });
+});
+
+
+</script>  
+</html>
