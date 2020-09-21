@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>War Birds</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./css/one_page_website.css">
+	<script src="./JS/one_page_website.js"></script>
+</head>
+<body>
+	
+	<!--NAV -->
+	
+	<div>
+		<div>
+			<ul>
+				<a href="#home" id="link"><li>Home</li></a>
+				<a href="#photos" id="link"><li>Photos</li></a>
+				<a href="#videos" id="link"><li>Videos</li></a>
+				<a href="#contact" id="link"><li>Contact</li></a>
+			</ul>
+		</div>
+	</div>
+	<!-- End Nav -->
+	
+	<!-- Home -->
+	<div id="home">
+		<div>
+			<div>
+				<h2>War Birds</h2>
+			</div>
+		</div>
+	</div>
+	<!-- End Home -->
+
+
+	<div class="row">
+		<div class="column">
+		  <img src="Images/thumbs/tn_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+		  <img src="Images/thumbs/tn_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+		  <img src="Images/thumbs/tn_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+		</div>
+		<div class="column">
+		  <img src="Images/thumbs/tn_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+		</div>
+	</div>
+	
+	
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	  
+		  <div class="mySlides">
+			<div class="numbertext">1 / 4</div>
+			<img src="./Images/thumbs/tn_1.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="./Images/thumbs/tn_2.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="./Images/thumbs/tn_3.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="./Images/thumbs/tn_4.jpg" style="width:100%">
+		  </div>
+
+		  
+	  
+		  <!-- Next/previous controls -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  
+		  <!-- Caption text -->
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+	  
+		  <!-- Thumbnail image controls -->
+		  <div class="column">
+			<img class="preview" src="./Images/thumbs/tn_1.jpg" onclick="currentSlide(1)" alt="A-10 Thunderbolt">
+		  </div>
+		  
+		  <div class="column">
+			<img class="preview" src="./Images/thumbs/tn_2.jpg" onclick="currentSlide(2)" alt="UH-60 Blackhawk">
+		  </div>
+
+		  <div class="column">
+			<img class="preview" src="./Images/thumbs/tn_3.jpg" onclick="currentSlide(3)" alt="MH-53 Pave Low">
+		  </div>
+
+		  <div class="column">
+			<img class="preview" src="./Images/thumbs/tn_4.jpg" onclick="currentSlide(4)" alt="F-18 Hornet">
+		  </div>
+		</div>
+	</div>
+
+	<!-- Videos -->
+	<section>
+		<div id="videos">
+			<h1>Videos</h1>
+			<div>
+			
+				<!-- Video Container 1 -->
+				<div>
+					<div>
+						<div>
+							<h3>P-40 Warhawk Video</h3>
+							<p>In depth look at a P-40.</p>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/c9hXpCB_TT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<!-- End Video Container 1-->
+	 
+				<!-- Video Container 2 -->
+				<div>
+					<div>
+						<div>
+							<h3>Enola Gay: Famous B-29 Superfortress</h3>
+							<p>This bomber had the dubious fortune of ushering in the atomic age.</p>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/603MFf1j88U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<!-- End Video Container 2-->
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Videos-->
+	
+	<!-- Mailing List-->
+	<section>
+		<div id="contact">
+			<div>
+				<h1>Mailing List</h1>
+				<div>
+					<h2><span>Join our mailing list</span>
+						<br/>Keep up on all the news!
+					</h2>
+					<p>
+						Please provide us with your basic contact information.
+					</P>
+					<div>
+						<form action="" method="post">
+							<input class="contact" type="text" value="First Name">
+							<input class="contact" type="text" value="Last Name">
+							<input class="contact" type="text" value="Email Address">
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+							<div>
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End RSVP -->
+	
+	<!-- Footer -->
+	<div>
+		<p>footer holder&nbsp&copy</p>
+	</div>
+</body>
+	 
