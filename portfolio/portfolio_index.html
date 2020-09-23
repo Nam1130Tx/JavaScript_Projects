@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nicholas Mireles</title>
+    <link rel="stylesheet" type="text/css" href="./portfolio_style.css">
+</head>
+
+<body class="background">
+
+<!-- Navbar -->
+    <div class="navbar">
+        <a class="active" href="#home">Home</a> 
+		<a href="#about">About</a>
+		<a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+    </div>
+<!-- End Navbar -->
+
+<!-- Home Section -->
+    <br>
+    <br>
+    <!-- Video -->
+    <div id="home">
+        <video autoplay muted loop id="home_vid">
+            <source src="media/Videos/profile_vid.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <!-- Video Text -->
+    <div class="vid_text">
+        <h1 style="color: antiquewhite;">Nicholas Mireles's Portfolio</h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>Programmers are not to be measured by their ingenuity and their logic
+                        <br>but by the completeness of their case analysis.
+                        </q>
+                        <br>-Alan J. Perlis
+                        <br>
+                        <br>
+                        My name is Nicholas Mireles, and welcome to my portfolio website. Here, I will show what I can do, as well as let you know a little more about me.
+                        <br>Thank you for dropping by and enjoy!
+                    </center>
+                </strong>
+            </p>
+    </div>
+<!-- End Home Section -->
+
+<!-- Slideshow-->
+    <div id="slideshow">
+        <div id="slideshow_bg">
+            <div id="slideshow_container">
+                
+                <div class="mySlides fade">
+                    <div class="slide_number">1 / 6</div>
+                        <img class="slide_show_images" src="media/Images/me.jpg" style="width: 100%;">
+                          <div class="text">I'm available to assist you on your projects!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">2 / 6</div>
+                        <img class="slide_show_images" src="media/Images/HTML_CSS_and_JavaScript.jpeg" style="width: 100%;">
+                          <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">3 / 6</div>
+                        <img class="slide_show_images" src="media/Images/Python.png" style="width: 100%;">
+                          <div class="text">the popular programming language Python,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">4 / 6</div>
+                        <img class="slide_show_images" src="media/Images/C_Sharp_and_Dot_NET.png" style="width: 100%;">
+                          <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">5 / 6</div>
+                        <img class="slide_show_images" src="media/Images/SQL_and_Database.jpg" style="width: 100%;">
+                          <div class="text">back end development, databases and SQL.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">6 / 6</div>
+                        <img class="slide_show_images" src="media/Images/Coding_1.jpg" style="width: 100%;">
+                          <div class="text">
+                              <a onclick="openForm()" href="#contact" style="color: white;">Contact me today!</a>
+                          </div>
+                </div>
+
+                <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        <br>
+
+            <div style="text-align: center;">
+
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- /Slideshow-->
+
+<!-- About Section -->
+    <div class="row" id="about"> <!-- L. Column -->
+        <div class="column_2">
+            <img src=".//media/Images/about_image.jpg" alt="Code Image">
+        </div>
+    
+
+        <div class="column_1"> <!-- R. Column-->
+            <h1>About</h1>
+                <p>Hello! I am a software developer, and recent graduate of <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy</a>&#39s Software Developer Boot Camp.
+                   There I was trained as a full-stack developer and studied the folowing programming languages: HTML, CSS, Javascript, SQL, C# & Python. I have also studied C++ independently as well.
+                <br>
+                <br> While I love coding, and solving problems, I also have  a variety of other intrests, such as traveling, camping and hiking, trivia, and music.
+                <br>
+                <br>I would love a chance to talk, about how I can help you, so please leave your contanct information below. </p>
+        </div>
+    </div>
+<!-- /About Section-->
+
+<!-- GitHub Section -->
+    <div class="row" id="github">  <!-- L. Column -->
+        <div class="column_1">
+            <h1>GitHub</h1>
+                <center>
+                    <p>You can view my coding projects on GitHub here at:<br></p>
+                    <a href="https://github.com/Nam1130tx" target="_blank">Nicholas Mireles's GitHub</a>
+                </center>  
+        </div>
+
+        <div class="column_2">     <!-- R. Column -->
+            <a href="https://github.com/Nam1130tx" target="_blank"><img src=".//media/Images/GitHub.png" alt="GitHub"></a>
+        </div>
+    </div>
+<!-- /GitHub Section -->
+
+<!-- Contact section -->
+    <div id="contact">
+        <button onclick="openForm()" class="pop_up_button"> CONTACT </button>
+          <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/info@learncodingantwhere.com" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Leave a message here" name="message">
+        <button type="submit" class="btn">SUBMIT</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+          </div>
+    </div>
+<!-- /Contact Section -->
+
+<!-- Footer -->
+    <footer>
+        <p>
+            <center>Nicholas Mireles</center>
+        </p>
+    </footer>
+<!-- /Footer-->
+
+<script src="./Portfolio_function.js"></script>
+</body>
+</html>
